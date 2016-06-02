@@ -1,0 +1,26 @@
+<ion-view view-title="FriendHome">
+  <ion-content>
+      <div class="list">
+        <a class="item item-avatar">
+        <img data-ng-src={{friendImages[clickedFriendId]}}>
+        {{clickedFriendName}}
+        <p> all Wannas List </p>
+        </a>
+      </div>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="wanna in allWannasList" type="item-text-wrap" >
+        <i class = {{wanna.icon[0]}} style=" color:{{wanna.color}};"></i>
+        <h2 ng-Click="goContentPage(wanna)">{{wanna.content}}</h2>
+        <p ng-Click="goContentPage(wanna)">{{wanna.description}}</p>
+        <!--<ion-option-button class="button-assertive" ng-click="removeWanna($index , wanna.ownerId, wanna.$id)">-->
+          <!--Delete-->
+        <!--</ion-option-button>-->
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+
+
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,68 @@
+<ion-view view-title="Submit">
+    <ion-content class="padding">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <form ng-submit="wannaSubmit(wanna)">
+            <label class="item item-input">
+                <input type="text" ng-model="wanna.content" placeholder="What do you want to do?">
+            </label>
+            <br>
+            <label class="item item-input">
+                <input type="text" ng-model="wanna.description" placeholder="Comments">
+            </label>
+            <div class="row">
+                <div class="col col-20">
+                    <div align="center">
+                        <button id="sportButton" type="button" class="button icon ion-ios-football" ng-click="wannaSport()"></button>
+                    </div>
+                </div>
+                <div class="col col-20">
+                    <div align="center">
+                        <button id="dinnerButton"type="button" class="button icon ion-ios-wineglass" ng-click="wannaDinner()"></button>
+                    </div>
+                </div>
+                <div class="col col-20">
+                    <div align="center">
+                        <button id="shoppingButton"type="button" class="button icon ion-bag" ng-click="wannaShopping()"></button>
+                    </div>
+                </div>
+                <div class="col col-20">
+                    <div align="center">
+                        <button id="sightseeingButton" type="button" class="button icon ion-map" ng-click="wannaSightseeing()"></button>
+                    </div>
+                </div>
+                <div class="col col-20">
+                    <div align="center">
+                        <button id="musicButton" type="button" class="button icon ion-music-note" ng-click="wannaMusic()"></button>
+                    </div>
+                </div>
+            </div>
+            <!--type="buttonを上記に入れたら、アイコンでsubmitされてしまう現象を回避できた-->
+            <br>
+            <br>
+            <br>
+
+            <div class="row">
+                <button id="submitButton" type = "submit" class="button button-full button-calm" ng-click="wannaSubmit()">
+                    Submit
+                </button>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col col-80 col-offset-10">
+                <div align="center">
+                    <div class="item range range-stable" id="motBar" style="border:none">
+                        <i class="ion-flame" style="font-size: 25px; color:#afeeee;"></i>
+                        <input type="range" name="volume" min="0" max="100" ng-model="motivation" ng-change="changeSlider(motivation)">
+                        <i class="ion-flame" style="font-size: 40px; color:#F60;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </ion-content>
+</ion-view>

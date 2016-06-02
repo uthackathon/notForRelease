@@ -1,0 +1,69 @@
+<ion-view view-title="Timeline">
+    <ion-content class="padding">
+
+        <ion-refresher
+                on-refresh="doReload()"
+                pulling-text="Pull to refresh..."
+                refreshing-text="Refreshing!">
+        </ion-refresher>
+
+
+        <button ng-click="writeWanna()" class="button button-full icon big ion-compose button-calm ">
+            iWanna...
+        </button>
+
+        <div class="list list-inset">
+            <label class="item item-input">
+                <i class="icon ion-search big placeholder-icon"></i>
+                <input ng-change = "searchWannas(tipsToFind)" ng-model="tipsToFind" placeholder="Search">
+            </label>
+        </div>
+
+        <div class="list" ng-repeat="wanna in wannas()" ng-init="referImage(wanna.ownerId)">
+            <div class="wanna" style=" border-right-color:{{wanna.color}};">
+                    <div class="uimg">
+                        <img style="height:100% ; width:100%; border-radius: 200px" data-ng-src={{friendImages[wanna.ownerId]}} ng-Click="goFriendHomePage(wanna)">
+                    </div>
+                    <div class="img_left" style="position: relative;">
+                        <button id={{wanna.$id}} style="float:right; color:{{wanna.likeInitColor}}; background-color: rgba(0,0,0,0); position: absolute; right: 0; bottom: 0;" type="button" class="button icon ion-heart" ng-Click="likeWanna(wanna)"></button>
+                        <div class="ganreimg">
+                                <i class={{wanna.icon[0]}} style=" padding: 1px 1px 1px 1px; color:{{wanna.color}};" ></i>
+                        </div>
+                        <div class="wannaname" type="button" href="#" ng-Click="goContentPage(wanna)">
+                                {{wanna.content}}
+                        </div>
+                        <div class="datebox" ng-Click="goContentPage(wanna)">
+                                    {{date(wanna.upload_time)}}
+                        </div>
+                        <div class="uname" style="" ng-Click="goFriendHomePage(wanna)">
+                                    {{wanna.user_name}}
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+<!--         前のデザイン
+　　　　　　　<div class="list" ng-repeat="wanna in wannas()" ng-init="myFunction(wanna)">
+            <div class="wannatest" style=" border-right-color:{{wanna.color}};">
+                <div class="uimgtest">
+                    <img style="height:100% ; width:100%;" data-ng-src={{friendImages[wanna.ownerId]}}>
+                </div>
+                <div class="wannanametest" type="button" href="#" ng-Click="goContentPage(wanna)">
+                    {{wanna.content}}
+                </div>
+                <div class="unametest">
+                    {{wanna.user_name}}
+                </div>
+                <div class="janreimgtest">
+                    <i class={{wanna.icon[0]}} style=" color:{{wanna.color}}; background-color: #ffffff; font-size: 33px; " ></i>
+                </div>
+                <div class="dateboxtest">
+                    {{date(wanna.upload_time)}}
+                </div>
+                <div class="liketest">
+                    <button id={{wanna.$id}} style="color:{{likeColor}}; background-color: #ffffff; width : 50px;" type="button" class="button icon ion-heart" ng-init="colorTheLikes(wanna)" ng-Click="likeWanna(wanna)"></button>
+                </div>
+            </div>
+        </div> -->
+    </ion-content>
+</ion-view>

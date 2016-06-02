@@ -1,0 +1,456 @@
+/* Empty. Add your own CSS if you like */
+
+.popup-container .popup{
+  border-radius: 5%;
+  width: 70%;
+  background-color: white;
+  color: red;
+}
+
+.panelbody .loginForm {
+  border: none;
+}
+
+.loginForm .loginInput{
+  padding-left: 28px;
+}
+
+.ion-images:before {
+  font-size: 80px;
+}
+
+button i.ion-ios-camera:before {
+  font-size: 80px;
+}
+
+div.list.card.photoChoice　{
+  margin-top: 30%;
+}
+
+div.item.item-divider.title {
+  padding: 5%;
+  background-color: #11c1f3;
+}
+
+div.item.item-avatar img {
+vertical-align: middle;
+}
+
+div.item.item-button-right  img {
+vertical-align: middle;
+}
+
+div.item.item-divider.title h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 22px;
+}
+
+div.item.item-image.choice {
+  padding: 5%;
+}
+
+a.item-icon-left{
+    color: #11c1f3;
+      color: #0288d1;
+}
+
+
+div.title.title-left.header-item{
+  background-color: #11c1f3;
+  color: #ffffff;
+}
+
+div.title.title-center.header-item{
+  background-color: #11c1f3;
+  color: #ffffff;
+}
+
+
+div.item.item-divider{
+  color: #ffffff;
+   background-color: #11c1f3;
+
+}
+div.item.item-button-right.ng-binding{
+  color: #0288d1;
+}
+
+i.icon.ion-person{
+  color: #11c1f3;
+}
+
+i.icon.ion-email{
+  color: #11c1f3;
+}
+
+
+ion-content{
+/*  background-color: #CEECF5;*/
+   background-color: #ffffff;
+}
+ion-header-bar.bar-stable.bar.bar-header{
+  background-color: #11c1f3;
+}
+
+button.button.back-button.buttons{
+    color: #ffffff;
+}
+h2{
+  color: #0288d1;
+}
+
+font.ng-binding{
+  color: #0288d1;
+}
+
+div.tab-nav.tabs i.icon{
+   color: #11c1f3;
+}
+
+button.button-icon.icon.ion-ios-paperplane.footer-btn{
+  color: #11c1f3;
+}
+
+div.footer-btn-wrap{
+  color: #11c1f3;
+}
+
+/*-----------------chatの部分のデザイン----------------*/
+
+.chats{
+  font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+  float: left;
+  clear: both;
+  margin-right: auto;
+  color: #006400;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  min-height: 40px;
+  width:auto;
+  max-width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+div.msg {
+  height: auto;
+  background-color: rgba(0,0,0,0);
+  padding: 2px 0px 1px 0px;
+}
+
+/*div.chatimg {
+  height: auto;
+  width:  auto;
+  float: left;
+}
+
+div.imgright {
+  height: auto;
+  width:  auto;
+}*/
+
+.self{
+  font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+  clear: both;
+  float: right;
+  margin-left: auto;
+  text-align: right;
+  color: #191970;
+  background-color: #eeeeee;
+  border-radius: 5px;
+  min-height: 30px;
+  max-width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.chats  img {
+vertical-align: middle;
+}
+.self  img {
+vertical-align: middle;
+}
+
+.uimgMes {
+  text-align: center;
+  height: 50px;
+  width: 50px;"
+}
+
+.landing {
+  /*background: url(../img/home.png) no-repeat center center fixed;*/
+  background-color: #11c1f3;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*--------------------------------------------*/
+
+.big{
+  font-size: 20px;
+  align:left center;
+}
+
+.spinner svg {
+
+  width: 28px;
+  height: 28px;
+  stroke: #fff;
+  fill: #fff;
+}
+
+.item-avatar i:first-child, .item-avatar .item-img {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 36px;
+    max-width: 40px;
+    max-height: 40px;
+    width: 100%;
+    border-radius: 4px;
+      width:100%;
+    height:80%;
+    align-self: right;
+  }
+
+.item.item-thumbnail-left {
+  padding-top: 15px;
+  min-height: 80px;
+  padding-left: 90px;
+}
+
+
+/*-----------------wanna表示用-----------------*/
+div.wanna { /*wanna全体の入れ子*/
+
+  font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+  height: auto;
+  width: 100%;
+  border: solid 0.5px #d3d3d3;
+  border-right-width: 5px;
+  background-color: rgba(0,0,0,0);
+  /*box-shadow:0.5px 0.5px 3px #778899;*/
+  overflow: hidden;
+  padding: 2px 0px 1px 0px;
+}
+
+div.uimg {/*col内*/
+  /*border: solid 0.5px #000000;*/
+  float: left;
+  height: 73px;
+  width: 73px;
+  padding: 7px 7px 7px 7px;
+}
+
+div.img_left {
+  /*border: solid 0.5px #000000;*/
+  width: 100%-55px;
+  height: 73px;
+}
+
+div.wannaname {
+  /*border: solid 0.5px #000000;*/
+  color: #222244;
+  height: 36px;
+  width: 100%-40px;
+  white-space: nowrap; /* 横幅のMAXに達しても改行しない */
+  overflow: hidden; /* ハミ出した部分を隠す */
+  text-overflow: ellipsis; /* 「…」と省略 */
+    -webkit-text-overflow: ellipsis; /* Safari */
+    -o-text-overflow: ellipsis; /* Opera */
+  vertical-align: middle;
+  padding: 1px 10px 5px 3px;
+  line-height: 42px;/*heightと同じ値で中央揃え*/
+  font-size: 18px;
+  /*font-weight: bold;*/
+}
+
+div.uname {
+  /*border: solid 0.5px #000000;*/
+  height: 37px;
+  width: 100%-100px;
+  white-space: nowrap; /* 横幅のMAXに達しても改行しない */
+  overflow: hidden; /* ハミ出した部分を隠す */
+  text-overflow: ellipsis; /* 「…」と省略 */
+    -webkit-text-overflow: ellipsis; /* Safari */
+    -o-text-overflow: ellipsis; /* Opera */
+  font-size: 15px;
+  line-height: 37px;/*heightと同じ値で中央揃え*/
+  color: #666666;
+}
+
+div.ganreimg{
+  float: left;
+  /*border: solid 0.5px #000000;*/
+  color: #11c1f3;
+  height: 36px;
+  width: 36px;
+  padding: 2px 2px 2px 2px;
+  text-align: center;/*wineだけ細いのでこれで補正、iconはテキストであることに注意*/
+  background-color: #ffffff;
+  font-size: 35px;
+}
+
+div.datebox { /*wannaの時間のところ*/
+  /*border: solid 0.5px #000000;*/
+  width: 83px;
+  height: 37px;
+  padding: 0px 5px 0px 0px;
+  background-color: #ffffff;
+  line-height: 37px;/*heightと同じ値で中央揃え*/
+  text-align: right;
+  position: absolute; right: 40px; bottom: 0;
+  color: #666666;
+}
+
+div.like {/*wannaのlikeボタン*/
+  border: solid 0.5px #000000;
+  width: 60px;
+  height: 60px;
+}
+
+
+/*----------------------------------------------------------*/
+
+/*------------------------content用-------------------------*/
+
+.test{
+  font-size: 20px;
+}
+
+div.wannacontent { /*wanna-contentにおける入れ子*/
+  width: 100%;
+  height: auto;
+  /*border: solid 1px #11c1f3;*/
+  background-color: rgba(0,0,0,0);
+  overflow: hidden;
+}
+
+div.uimg_content {
+  height: 50px;
+  width: 50px;
+  float:left;
+  clear:both;
+}
+
+div.wannaname_content {
+  height:50px;
+  width: 100%;
+  color: #0288d1;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 30px;
+  padding:3px 0px 5px 0px;
+}
+
+
+div.description {
+  width: 100%;
+  padding:5px 10px 5px 10px;
+}
+
+div.like_content{
+  width: 100%;
+  height: auto;
+  background-color: rgba(0,0,0,0);
+  overflow: hidden;
+}
+
+div.likebutton {
+  height: 50px;
+  width: 50px;
+  float:right;
+  clear:both;
+}
+
+div.likenum {
+  border: solid 1px #11c1f3;
+  height:50px;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align:center;
+  font-size: 20px;
+  padding:3px 0px 5px 0px;
+  position: absolute;
+  right: 0%;
+}
+
+/*-----------------wannaテスト用-----------------*/
+div.wannatest { /*wanna全体の入れ子*/
+  height: 66px;
+  width: 100%;
+  border: solid 0.5px #e6e6fa;
+  border-right-width: 5px;
+  background-color: rgba(0,0,0,0);
+  box-shadow:0.5px 0.5px 3px #778899;
+}
+
+div.uimgtest {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+div.wannanametest {
+  color: #191970;
+  height: 38px;
+  width:170px;
+  white-space: nowrap; /* 横幅のMAXに達しても改行しない */
+  overflow: hidden; /* ハミ出した部分を隠す */
+  text-overflow: ellipsis; /* 「…」と省略 */
+    -webkit-text-overflow: ellipsis; /* Safari */
+    -o-text-overflow: ellipsis; /* Opera */
+  position: absolute;
+  top: 12px;
+  left: 110px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+div.unametest {
+  height: 29px;
+  width:150px;
+  white-space: nowrap; /* 横幅のMAXに達しても改行しない */
+  overflow: hidden; /* ハミ出した部分を隠す */
+  text-overflow: ellipsis; /* 「…」と省略 */
+    -webkit-text-overflow: ellipsis; /* Safari */
+    -o-text-overflow: ellipsis; /* Opera */
+  position: absolute;
+  top: 45px;
+  left: 10px;
+  font-size: 12px;
+}
+
+div.janreimgtest{
+  color: #11c1f3;
+  height: 35px;
+  width: 35px;
+  text-align: center;/*wineだけ細いのでこれで補正、iconはテキストであることに注意*/
+  position: absolute;
+  top: 12px;
+  left: 62px;
+}
+
+div.dateboxtest { /*wannaの時間のところ*/
+  width: 150px;
+  height: 20px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 40px;
+  left: 120px;
+}
+
+div.liketest {/*wannaのlikeボタン*/
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+/*----------------------------------------------------------

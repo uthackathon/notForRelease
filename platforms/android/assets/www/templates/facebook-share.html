@@ -1,0 +1,26 @@
+<ion-view view-title="iWanna List">
+	<ion-content>
+		<a class="button icon-left ion-chevron-left button-clear button-calm" ng-click = "backToHome()"></a>
+
+			<button class="button icon-left ion-social-facebook button-calm" ng-click = "screenShotShareViaTwitter()">
+			</button>
+		<!-- <div>
+		<ion item class="list card" ng-repeat="wanna in allWannasList">
+			<div class="list">
+      		{{wanna.content}}
+      		</div>
+    	</ion-item>
+		</div>
+ -->
+		<div class="list card">
+ 				<a href="#" class="item item-avatar" style = "background-color: #FFFFFF"  ng-repeat="wanna in allWannasList">
+    				<img src  = {{wanna.icon[0]}}>
+            		<font color: #FFFFFF>
+    					{{wanna.content}}
+            		</font>
+             		<p>{{wanna.description}}</p>
+  				</a>
+  		</div>
+
+  	</ion-content>
+</ion-view>

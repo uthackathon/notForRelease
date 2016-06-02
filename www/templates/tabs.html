@@ -1,0 +1,41 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+<ion-tabs class="tabs-color-active-positive tabs-icon-only">
+  <!--tabs-icon-top にすると文字入れられる-->
+
+  <!-- Dashboard Tab -->
+  <ion-tab  icon-off="ion-navicon" icon-on="ion-navicon-round" href="#/tab/dash">
+    <ion-nav-view name="tab-dash"></ion-nav-view>
+  </ion-tab>
+
+  <!-- MyPage Tab -->
+  <ion-tab  icon-off="ion-ios-home-outline" icon-on="ion-ios-home" href="#/tab/home">
+    <ion-nav-view name="tab-home"></ion-nav-view>
+  </ion-tab>
+
+    <!-- Messages Tab -->
+  <ion-tab  icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes" href="#/tab/messages">
+    <ion-nav-view name="tab-messages"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Friends Tab -->
+<!--   <ion-tab title="Friends" icon-off="ion-ios-person-outline" icon-on="ion-ios-person" href="#/tab/friends">
+    <ion-nav-view name="tab-friends"></ion-nav-view>
+  </ion-tab> -->
+
+  <!-- Search Friends Tab -->
+  <ion-tab  icon-off="ion-ios-person-outline" icon-on="ion-ios-person" href="#/tab/searchfriends">
+    <ion-nav-view name="tab-searchfriends"></ion-nav-view>
+  </ion-tab>
+ 
+
+  <!-- Account Tab -->
+  <ion-tab  icon-off="ion-ios-gear-outline" icon-on="ion-ios-gear" href="#/tab/account">
+    <ion-nav-view name="tab-account"></ion-nav-view>
+  </ion-tab>
+
+
+</ion-tabs>

@@ -1,0 +1,69 @@
+<ion-view view-title="Friends">
+    <ion-content class="padding">
+        <div align="right">
+            <i class="icon ion-search big placeholder-icon" ng-click="showSearchFriendsBox()"></i>
+        </div>
+        <div class="list list-inset">
+            <label class="item item-input" id="searchFriendsBox" style="display:none; border: 0px;">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input ng-change = "searchFriendsByName($index,friendNameToFind)"  ng-model="friendNameToFind" placeholder="Search Friends">
+            </label>
+        </div>
+        <!--<p>{{nameAddress}}</p>-->
+
+        <div>
+            <ion item class="list card" ng-repeat="profile in profiles">
+                <!--           <div class="item item-divider">
+                              Search Result
+                          </div> -->
+
+                <div class="item item-button-right"><!--検索用-->
+                    <img data-ng-src={{unknownImages[profile.uid]}} style="height:40px ; width:40px; border-radius: 200px">
+                    {{profile.name}}
+                    <!--{{profile.uid}}-->
+                    <button class="button button-calm" ng-click = "follow($index, profile.uid)" >
+                        <i class="icon ion-person-add"></i>
+                    </button>
+                </div>
+
+            </ion>
+        </div>
+
+
+
+
+        <div class="item item-divider">
+            Friends
+        </div>
+
+        <ion item class="list card" ng-repeat="friend in allFriendslist" ng-init="referImage2(friend.$id)">
+
+
+            <div class="item item-button-right">
+                <p ng-Click="goFriendHomePage(friend)">
+                    <img data-ng-src={{friendImages[friend.$id]}} style="height:40px ; width:40px; border-radius: 200px">
+                    {{friend.name}}
+                </p>
+                <button class="button button-calm" ng-click = "createRoom(friend.$id)" style="top:20px;">
+                    <i class="icon ion-paper-airplane"></i>
+                </button>
+            </div>
+        </ion item>
+
+
+        <div class="item item-divider">
+            Friend Request
+        </div>
+
+        <ion item class="list card" ng-repeat="recommendedUser in recommendedUsers" ng-init="referImage(recommendedUser.$id)">
+            <div class="item item-button-right">
+                <img data-ng-src={{recommendedImages[recommendedUser.$id]}} style="height:40px ; width:40px; border-radius: 200px">
+                {{recommendedUser.name}}
+                <button class="button button-calm" ng-click = "followRecommended($index, recommendedUser.$id)">
+                    <i class="icon ion-person-add"></i>
+                </button>
+            </div>
+
+        </ion item>
+    </ion-content>
+</ion-view>
